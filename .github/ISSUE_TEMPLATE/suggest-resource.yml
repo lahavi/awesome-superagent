@@ -1,0 +1,36 @@
+name: Suggest a resource
+description: Suggest a guide, tool, article, or project for the list.
+labels: [suggestion]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Short description
+      description: One sentence on what the resource does.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Official Resources
+        - DeepSeek Harness
+        - Guides and Tutorials
+        - Deep Dives and Analysis
+        - Security
+        - Tools and Extensions
+        - Reimplementations
+        - Related Projects
+        - Translations
+        - News
+        - Not sure
+    validations:
+      required: true

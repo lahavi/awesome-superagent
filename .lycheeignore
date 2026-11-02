@@ -1,0 +1,5 @@
+# Sites that block automated requests. Check these by hand.
+^https://(www\.)?bloomberg\.com/
+^https://(www\.)?x\.com/
+^https://(www\.)?npmjs\.com/
+^https://mp\.weixin\.qq\.com/
