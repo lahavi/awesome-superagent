@@ -78,6 +78,8 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 - [dsh-superagent-setup](https://github.com/hhse/dsh-superagent-setup) - A Codex and Harness skill with a tested runbook, including setup pitfalls that are not obvious from the docs.
 - [Router–Worker Multi-Agent Architecture](https://agentspulse.github.io/tutorials/deepseek-super-agent-architecture/) - A tutorial on how the Router, Workers, and event routing fit together.
 - [Prototype Setup, Workflow and Security](https://aicybr.com/blog/deepseek-dsh-superagent-prototype-setup-security) - A walkthrough of requirements, the authorization model, and host-security limits.
+- [learn-deepseek-super-agent](https://github.com/aicoder2048/learn-deepseek-super-agent) - An interactive nine-lesson course on the design article, with simulations, quizzes, and an AI tutor, in Chinese.
+- [Super-agent Architecture and Prototype Walkthrough](https://eogee.com/article/302) - A hands-on run of the prototype on WSL2, with native-Windows failures, China mirrors, and a pitfalls table, in Chinese.
 
 ## Deep Dives and Analysis
 
@@ -87,6 +89,7 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 - [What It Actually Is, and What It Is Not Yet](https://dev.to/paullovelace/deepseek-super-agent-a-proactive-open-source-coding-agent-prototype-what-it-actually-is-and-438a) - A grounded look at the prototype's current scope.
 - [49-chart visual analysis](https://github.com/ruijh/dsh-superagent-prototype-analysis) - Interactive charts of the codebase, data model, and prompts, in Chinese ([live site](https://ruijh.github.io/dsh-superagent-prototype-analysis/)).
 - [Independent evaluation](https://github.com/pans1es/superagent-prototype-evaluation) - An unofficial benchmark of 75 runs comparing the two-layer design with a single session, with data and a bilingual report.
+- [super-agent-open-questions](https://github.com/FranciscoLaurent/super-agent-open-questions) - Proposed answers to the design article's four open questions, with small simulation experiments, in Chinese.
 
 ## Security
 
@@ -103,31 +106,40 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 
 - [dsh-superagent-inbox](https://github.com/JHOpenDev/dsh-superagent-inbox) - A local file-inbox Source that runs SuperAgent with no external accounts.
 - [superagent-imessage](https://github.com/wiva-hq/superagent-imessage) - Ask for work in iMessage and get the pull request back in the same chat.
+- [dsh-superagent-redmine](https://github.com/billbill2012/dsh-superagent-redmine) - A Redmine Source that turns issues and comments into Tickets, passes image attachments to the model, and replies as Redmine notes.
 
 ### Panels and UI
 
 - [dsh-superagent-panel](https://github.com/deepseekv41flash/dsh-superagent-panel) - Embeds the full SuperAgent panel in the DSH NEXT desktop app.
 - [dsh-superagent-bridge](https://github.com/deepseekv41flash/dsh-superagent-bridge) - The service-side companion that serves the panel as a standalone page.
+- [dsh-superagent-manager](https://github.com/Aily-DSH/dsh-superagent-manager) - A Windows Harness plugin that creates, runs, and embeds several SuperAgent instances in one client, one tab per project, documented in Chinese.
 
 ### Ports
 
 - [dsh-superagent-windows](https://github.com/Check-mj/dsh-superagent-windows) - A Windows adaptation with a desktop app, multiple instances, a Watchdog, and Router sharding.
 - [dsh-superagent-win](https://github.com/buyou-claw/dsh-superagent-win) - A Windows port that scopes the agent identity to each Worker command.
 - [pi-superagent](https://github.com/aicodewith-team/pi-superagent) - A port to the pi coding agent that works with any model pi supports.
+- [claude-superagent](https://github.com/lyra-planet/claude-superagent) - A port to Claude Code through the Claude Agent SDK that keeps the upstream domain core, with a terminal Source and hook-enforced Worker rules.
 
 ### Built on SuperAgent
 
 - [AgentHQ](https://github.com/elidot007/agenthq) - A 24/7 multi-business ticket system with note inboxes, scheduled wake-ups, and a dashboard.
+- [dsh-game-studio](https://github.com/yinhaox/dsh-game-studio) - A Godot 4 game studio kit with extra Sources, Guards, Worker playbooks, and a project template, documented in Chinese.
 
 ## Reimplementations
 
 - [nano-dsh-superagent](https://github.com/cjy851096/nano-dsh-superagent) - A small, runnable TypeScript version of the five modules from the design article, with an offline mock model.
 - [xys-superagent-prototype](https://github.com/ProfYangShengXu/xys-superagent-prototype) - A Python ticket ledger for agent work in one process and one SQLite file.
+- [dsh-super-agent](https://github.com/vicfei/dsh-super-agent) - An executor-agnostic TypeScript take on admission tables, observe mode, and tickets for any CLI coding agent.
+- [dsh-superagent-java](https://github.com/yuzhiyang1/dsh-superagent-java) - A Java 21 rewrite aimed at parity with the prototype, with a web console and an acceptance matrix, documented in Chinese.
+- [deepseek-super-agent](https://github.com/LofiSu/deepseek-super-agent) - A TypeScript runtime with its own harness that maps each feature of the design article to code and tests, for any OpenAI-compatible model.
 
 ## Related Projects
 
 - [dsh-session-superagent](https://github.com/MYCF711/dsh-session-superagent) - A session-level take that watches a repository and wakes one Harness session, without a separate instance.
 - [Patchwork](https://github.com/ADWMC/Patchwork) - A coding agent for Harness with verifiable tasks, retrieval, memory, and native SuperAgent support.
+- [cc-codex-super-agent](https://github.com/Kevin-Pal/cc-codex-super-agent) - A Router and Worker workflow with Claude Code as the Router and native Codex sessions as Workers.
+- [cloud-superagent](https://github.com/konbakuyomu/cloud-superagent) - An adaptation of the dispatch design to Claude Code cloud sessions, with deterministic queue, ticket, and gate CLIs, documented in Chinese.
 
 ## Translations
 
