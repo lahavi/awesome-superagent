@@ -90,6 +90,7 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 - [49-chart visual analysis](https://github.com/ruijh/dsh-superagent-prototype-analysis) - Interactive charts of the codebase, data model, and prompts, in Chinese ([live site](https://ruijh.github.io/dsh-superagent-prototype-analysis/)).
 - [Independent evaluation](https://github.com/pans1es/superagent-prototype-evaluation) - An unofficial benchmark of 75 runs comparing the two-layer design with a single session, with data and a bilingual report.
 - [super-agent-open-questions](https://github.com/FranciscoLaurent/super-agent-open-questions) - Proposed answers to the design article's four open questions, with small simulation experiments, in Chinese.
+- [We Tested Super-agent: Who Supervises the AI Manager?](https://www.163.com/dy/article/LBFSSPCV0511DPVD.html) - AI Tech Review runs the prototype on a seeded repository with concurrency, mid-task changes, planted injections, and a cost comparison against a single session, in Chinese.
 
 ## Security
 
@@ -107,6 +108,7 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 - [dsh-superagent-inbox](https://github.com/JHOpenDev/dsh-superagent-inbox) - A local file-inbox Source that runs SuperAgent with no external accounts.
 - [superagent-imessage](https://github.com/wiva-hq/superagent-imessage) - Ask for work in iMessage and get the pull request back in the same chat.
 - [dsh-superagent-redmine](https://github.com/billbill2012/dsh-superagent-redmine) - A Redmine Source that turns issues and comments into Tickets, passes image attachments to the model, and replies as Redmine notes.
+- [dsh-superagent-linear](https://github.com/lkshrk/dsh-superagent-linear) - A Linear Source that turns agent-session delegations and mentions into Triggers, can work through sub-issues in dependency order, and completes the Issue when its pull request merges.
 
 ### Panels and UI
 
@@ -120,6 +122,7 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 - [dsh-superagent-win](https://github.com/buyou-claw/dsh-superagent-win) - A Windows port that scopes the agent identity to each Worker command.
 - [pi-superagent](https://github.com/aicodewith-team/pi-superagent) - A port to the pi coding agent that works with any model pi supports.
 - [claude-superagent](https://github.com/lyra-planet/claude-superagent) - A port to Claude Code through the Claude Agent SDK that keeps the upstream domain core, with a terminal Source and hook-enforced Worker rules.
+- [pi-superagent (nocoo)](https://github.com/nocoo/pi-superagent) - A standalone port that keeps the domain core and authorization rules, runs the Router and Workers as persistent Pi SDK sessions, and adds Inbox and local IM Sources and a CLI, with no DSH dependency.
 
 ### Built on SuperAgent
 
@@ -133,6 +136,7 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 - [dsh-super-agent](https://github.com/vicfei/dsh-super-agent) - An executor-agnostic TypeScript take on admission tables, observe mode, and tickets for any CLI coding agent.
 - [dsh-superagent-java](https://github.com/yuzhiyang1/dsh-superagent-java) - A Java 21 rewrite aimed at parity with the prototype, with a web console and an acceptance matrix, documented in Chinese.
 - [deepseek-super-agent](https://github.com/LofiSu/deepseek-super-agent) - A TypeScript runtime with its own harness that maps each feature of the design article to code and tests, for any OpenAI-compatible model.
+- [OpenSuperAgent](https://github.com/thefullgc/opensuperagent) - A self-hosted implementation of the design article on npm, with a web console, Router and Worker model routing, and built-in Worker roles and skills, documented in Chinese and English.
 
 ## Related Projects
 
@@ -140,6 +144,7 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 - [Patchwork](https://github.com/ADWMC/Patchwork) - A coding agent for Harness with verifiable tasks, retrieval, memory, and native SuperAgent support.
 - [cc-codex-super-agent](https://github.com/Kevin-Pal/cc-codex-super-agent) - A Router and Worker workflow with Claude Code as the Router and native Codex sessions as Workers.
 - [cloud-superagent](https://github.com/konbakuyomu/cloud-superagent) - An adaptation of the dispatch design to Claude Code cloud sessions, with deterministic queue, ticket, and gate CLIs, documented in Chinese.
+- [omp-superagent](https://github.com/dbc-hbin/omp-superagent) - A Discord, Telegram, and Slack gateway for oh-my-pi where one head session works directly or delegates to independent lane sessions, modeled in part on the prototype.
 
 ## Translations
 
