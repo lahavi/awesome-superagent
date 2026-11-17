@@ -4,3 +4,5 @@
 ^https://(www\.)?npmjs\.com/
 ^https://mp\.weixin\.qq\.com/
 ^https://(www\.)?dataconomy\.com/
+^https://(www\.)?datacamp\.com/
+^https://(www\.)?scmp\.com/
