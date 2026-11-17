@@ -77,7 +77,6 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 
 ## Guides and Tutorials
 
-- [dsh-superagent-setup](https://github.com/hhse/dsh-superagent-setup) - A Codex and Harness skill with a tested runbook, including setup pitfalls that are not obvious from the docs.
 - [Router–Worker Multi-Agent Architecture](https://agentspulse.github.io/tutorials/deepseek-super-agent-architecture/) - A tutorial on how the Router, Workers, and event routing fit together.
 - [Prototype Setup, Workflow and Security](https://aicybr.com/blog/deepseek-dsh-superagent-prototype-setup-security) - A walkthrough of requirements, the authorization model, and host-security limits.
 - [learn-deepseek-super-agent](https://github.com/aicoder2048/learn-super-agent) - An interactive nine-lesson course on the design article, with simulations, quizzes, and an AI tutor, in Chinese.
