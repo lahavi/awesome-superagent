@@ -78,7 +78,6 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 ## Guides and Tutorials
 
 - [Router–Worker Multi-Agent Architecture](https://agentspulse.github.io/tutorials/deepseek-super-agent-architecture/) - A tutorial on how the Router, Workers, and event routing fit together.
-- [Prototype Setup, Workflow and Security](https://aicybr.com/blog/deepseek-dsh-superagent-prototype-setup-security) - A walkthrough of requirements, the authorization model, and host-security limits.
 - [learn-deepseek-super-agent](https://github.com/aicoder2048/learn-super-agent) - An interactive nine-lesson course on the design article, with simulations, quizzes, and an AI tutor, in Chinese.
 - [Super-agent Architecture and Prototype Walkthrough](https://eogee.com/article/302) - A hands-on run of the prototype on WSL2, with native-Windows failures, China mirrors, and a pitfalls table, in Chinese.
 - [Observe CI Before Repair](https://www.datacamp.com/tutorial/deepseek-superagent-tutorial) - A DataCamp tutorial that runs a CI-repair rule in observe mode, authorizes one fix, and checks the pull request against a holdout test suite.
@@ -110,7 +109,6 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 A Source is where SuperAgent hears about work. The official bundle ships GitHub and Feishu.
 
 - [dsh-superagent-inbox](https://github.com/JHOpenDev/dsh-superagent-inbox) - A local file-inbox Source that runs SuperAgent with no external accounts.
-- [superagent-imessage](https://github.com/wiva-hq/superagent-everywhere) - Ask for work in iMessage and get the pull request back in the same chat.
 - [dsh-superagent-redmine](https://github.com/billbill2012/dsh-superagent-redmine) - A Redmine Source that turns issues and comments into Tickets, passes image attachments to the model, and replies as Redmine notes.
 - [gh-gitlab](https://github.com/hoogte-oile/gh-gitlab) - A `gh`-compatible CLI that translates the GitHub Source's API calls to GitLab, so an unmodified SuperAgent can watch a GitLab project, documented in Chinese.
 - [dsh-super-chat](https://github.com/gekailin/dsh-super-chat) - A chat panel and Source that turns tagged messages into Tickets, with SQLite storage and an optional WeChat bridge.
