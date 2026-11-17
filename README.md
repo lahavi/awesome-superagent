@@ -136,7 +136,7 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 Independently maintained forks of the prototype with substantial changes of their own.
 
 - [open-superagent](https://github.com/chunonesoft/open-superagent) - Adds self-hosted GitLab and DingTalk Sources, chat-only deployments, and regular upstream merges, documented in Chinese.
-- [dsh-superagent-channels](https://github.com/baojingyu/dsh-superagent-channels) - Adds GitLab, Yunxiao Projex, WeChat, DingTalk, and WeCom Sources, and several instances of one channel, installed next to the official bundle.
+- [dsh-superagent-channels](https://github.com/baojingyu/dsh-superagent-multi-channel) - Adds GitLab, Yunxiao Projex, WeChat, DingTalk, and WeCom Sources, and several instances of one channel, installed next to the official bundle.
 - [multi-superagent](https://github.com/pprp/multi-superagent) - Runs several isolated repositories in one Harness profile, each with its own Sources, Policy, state, and panel view, documented in Chinese.
 - [dsh-superagent-local](https://github.com/mengzhongjie/dsh-superagent-local) - Takes requests from a main session in each Harness workspace instead of GitHub, with attachments passed to Workers.
 
