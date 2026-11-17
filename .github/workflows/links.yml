@@ -31,20 +31,27 @@ jobs:
             --accept '200..=299,429'
             --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
             './**/*.md'
-          fail: ${{ github.event_name != 'schedule' }}
+          # Scheduled and manual runs report through an issue instead of failing.
+          fail: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
 
       - name: Find open broken-links issue
         id: existing
-        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != 0
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
         run: echo "number=$(gh issue list -R '${{ github.repository }}' --label broken-links --state open --json number --jq '.[0].number // empty')" >> "$GITHUB_OUTPUT"
 
       - name: Report broken links
-        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != 0
+        if: steps.existing.conclusion == 'success' && steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v6.0.0
         with:
           title: Broken links found
           content-filepath: ./lychee/out.md
           labels: broken-links
           issue-number: ${{ steps.existing.outputs.number }}
+
+      - name: Close fixed broken-links issue
+        if: steps.existing.conclusion == 'success' && steps.lychee.outputs.exit_code == 0 && steps.existing.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close '${{ steps.existing.outputs.number }}' -R '${{ github.repository }}' --comment "All links pass as of ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}."
