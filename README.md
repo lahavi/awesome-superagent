@@ -101,6 +101,7 @@ SuperAgent runs as a profile of DeepSeek Harness (`dsh`), DeepSeek's open-source
 - [Deployment](https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/006-deployment.md#permissions-and-isolation) - The official permissions and isolation notes, including why the agent needs a dedicated OS account.
 - [Proactive Coding Agent Security](https://agentbeam.com/blog/deepseek-super-agent-proactive-coding-agent-triggers-security) - How Triggers and Mandates work, and where prompt injection fits.
 - [Coding agent that watches team chats](https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/) - Help Net Security's coverage of the release and its risks.
+- [How to Set Up DeepSeek Super-Agent Safely](https://avinashsangle.com/blog/deepseek-super-agent-setup-guide) - A safety-first setup guide that explains how anyone commenting on a subscribed thread can reach or resume a Ticket, with isolation, allowlist, and auto-merge advice.
 
 ## Tools and Extensions
 
@@ -120,6 +121,8 @@ A Source is where SuperAgent hears about work. The official bundle ships GitHub 
 - [dsh-superagent-bridge](https://github.com/deepseekv41flash/dsh-superagent-bridge) - The service-side companion that serves the panel as a standalone page.
 - [dsh-superagent-manager](https://github.com/Aily-DSH/dsh-superagent-manager) - A Windows Harness plugin that creates, runs, and embeds several SuperAgent instances in one client, one tab per project, documented in Chinese.
 - [dsh-superagent-ui](https://github.com/hustnn/dsh-superagent-ui) - A local operator console with a ticket board, calibration of the agent's judgments, policy and prompt editors, and health views, with a demo-data preview.
+- [dsh-superagent-view](https://github.com/ft54482/dsh-superagent-view) - A read-only status page in the Harness Web UI that shows health, executor load, tickets that need a person, and recent eval decisions through an allowlisted proxy to the management API.
+- [dsh-superagent-session-fold](https://github.com/yichao-agent/dsh-superagent-session-fold) - A Harness client plugin that folds Worker sessions into one status row in the sidebar and hides their directories from the New Session workspace picker.
 
 ### Ports
 
@@ -137,6 +140,7 @@ Independently maintained forks of the prototype with substantial changes of thei
 - [dsh-superagent-channels](https://github.com/baojingyu/dsh-superagent-multi-channel) - Adds GitLab, Yunxiao Projex, WeChat, DingTalk, and WeCom Sources, and several instances of one channel, installed next to the official bundle.
 - [multi-superagent](https://github.com/pprp/multi-superagent) - Runs several isolated repositories in one Harness profile, each with its own Sources, Policy, state, and panel view, documented in Chinese.
 - [dsh-superagent-local](https://github.com/mengzhongjie/dsh-superagent-local) - Takes requests from a main session in each Harness workspace instead of GitHub, with attachments passed to Workers.
+- [dsh-superagent-hardened](https://github.com/minrahim1999/dsh-superagent-hardened) - Runs Worker sessions under a configurable `workspace-write` preset instead of `danger-full-access`, blocks host-dangerous commands by default, and leaves the host's Git configuration alone, with every change documented.
 
 ### Developer Tools
 
@@ -147,6 +151,7 @@ Independently maintained forks of the prototype with substantial changes of thei
 ### Built on SuperAgent
 
 - [dsh-game-studio](https://github.com/yinhaox/dsh-game-studio) - A Godot 4 game studio kit with extra Sources, Guards, Worker playbooks, and a project template, documented in Chinese.
+- [dsh-plan-superagent](https://github.com/steveopen1/dsh-plan-superagent) - A plan board that turns one sentence into a task tree with a human approval gate, dispatches each ready task as a SuperAgent ticket, and writes the pull request and CI evidence back, documented in Chinese.
 
 ## Reimplementations
 
@@ -154,7 +159,7 @@ Independently maintained forks of the prototype with substantial changes of thei
 - [xys-superagent-prototype](https://github.com/ProfYangShengXu/xys-superagent-prototype) - A Python ticket ledger for agent work in one process and one SQLite file.
 - [dsh-super-agent](https://github.com/vicfei/dsh-super-agent) - An executor-agnostic TypeScript take on admission tables, observe mode, and tickets for any CLI coding agent.
 - [dsh-superagent-java](https://github.com/yuzhiyang1/dsh-superagent-java) - A Java 21 rewrite aimed at parity with the prototype, with a web console and an acceptance matrix, documented in Chinese.
-- [deepseek-super-agent](https://github.com/LofiSu/deepseek-super-agent) - A TypeScript runtime with its own harness that maps each feature of the design article to code and tests, for any OpenAI-compatible model.
+- [dsh-super-agent (LofiSu)](https://github.com/LofiSu/dsh-super-agent) - A TypeScript runtime with its own harness that maps each feature of the design article to code and tests, for any OpenAI-compatible model.
 - [OpenSuperAgent](https://github.com/thefullgc/opensuperagent) - A self-hosted implementation of the design article on npm, with a web console, Router and Worker model routing, and built-in Worker roles and skills, documented in Chinese and English.
 
 ## Related Projects
@@ -177,8 +182,9 @@ Independently maintained forks of the prototype with substantial changes of thei
 - [DeepSeek open-sources Super-Agent](https://thenextweb.com/news/deepseek-super-agent-open-source-coding-agent) - The Next Web.
 - [DeepSeek Releases Open-source Dsh-superagent Coding Agent](https://dataconomy.com/2026/11/02/deepseek-releases-open-source-dsh-superagent-coding-agent/) - Dataconomy.
 - [DeepSeek Proposes Super-Agent Architecture](https://analyticsindiamag.com/ai-news/deepseek-proposes-super-agent-architecture-to-automate-ai-coding-workflows) - Analytics India Magazine.
-- [DeepSeek Unveils 'Super Agent' to Run Multiple Tasks at Once](https://en.sedaily.com/international/2026/11/01/deepseek-unveils-super-agent-to-run-multiple-tasks-at-once) - Seoul Economic Daily.
+- [DeepSeek Unveils 'Super Agent' to Run Multiple Tasks at Once](https://en.sedaily.com/world/2026/11/01/deepseek-unveils-super-agent-to-run-multiple-tasks-at-once) - Seoul Economic Daily.
 - [DeepSeek Unveils AI 'Super Agent' in Coding Race With OpenAI, Anthropic](https://www.scmp.com/tech/article/3372884/deepseek-unveils-ai-super-agent-coding-race-openai-anthropic) - South China Morning Post.
+- [DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent](https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/) - MarkTechPost, with a comparison against other GitHub coding agents.
 
 ## Related Lists
 
